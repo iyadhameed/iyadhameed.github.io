@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iyad Hamid | Oracle DBA & Application Developer</title>
+    <title>Iyad Hamid | Oracle DBA & Data Systems Analyst</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
@@ -109,8 +109,15 @@
         .hero p {
             font-size: 1.2rem;
             color: var(--text-light);
-            max-width: 600px;
+            max-width: 750px;
             margin: 0 auto 30px;
+        }
+
+        .hero-btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .hero-btn {
@@ -122,6 +129,10 @@
             border-radius: 50px;
             font-weight: 600;
             transition: background 0.3s, transform 0.2s;
+        }
+
+        .hero-btn.secondary {
+            background: #1e293b;
         }
 
         .hero-btn:hover {
@@ -185,7 +196,7 @@
         }
 
         .card ul li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
         /* Skills Grid */
@@ -245,15 +256,24 @@
         .list-content p {
             color: var(--text-light);
             font-size: 0.9rem;
+            margin-bottom: 8px;
         }
 
-        .list-content a {
+        .publication-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .publication-links a {
             color: var(--primary-color);
             text-decoration: none;
             font-size: 0.85rem;
+            font-weight: 600;
         }
 
-        .list-content a:hover {
+        .publication-links a:hover {
             text-decoration: underline;
         }
 
@@ -329,6 +349,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#cvs">Download CVs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
@@ -341,8 +362,11 @@
     <section class="hero">
         <div class="container">
             <h1>Hello, I'm <span>Iyad Hamid</span></h1>
-            <p>Business Application Developer & Oracle DBA specializing in APEX, PL/SQL, and Financial Systems Integration.</p>
-            <a href="#contact" class="hero-btn">Get in Touch</a>
+            <p>Senior Database Specialist, Data Mining Researcher & Systems Analyst specializing in Enterprise Applications, Financial Datasets, and Predictive Modeling.</p>
+            <div class="hero-btn-group">
+                <a href="#contact" class="hero-btn">Get in Touch</a>
+                <a href="#cvs" class="hero-btn secondary">Download CVs</a>
+            </div>
         </div>
     </section>
 
@@ -350,7 +374,7 @@
     <section id="about" class="container">
         <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
         <div class="card">
-            <p>Highly skilled Business Application Developer and Oracle DBA with extensive experience in the full software development life cycle (SDLC). Proven expertise in designing, developing, and integrating financial and revenue systems using Oracle APEX, Forms, and Reports. Adept at database administration, performance tuning, and leveraging Oracle Spatial data for GIS integration. Strong background in translating complex business requirements into robust, secure, and scalable database architectures.</p>
+            <p>Business Application Developer and Oracle DBA with 25+ years of extensive experience at the Municipality of Gaza. Backed by a Master’s degree specializing in <strong>data mining, data cleansing, and building smart predictive models</strong>. Proven expertise in handling large-scale datasets—including financial data for municipal service costs and field water meter readings distributed across zones and streets. Highly skilled in data validation, cross-functional coordination, and information management, bridging database engineering with advanced data science.</p>
         </div>
     </section>
 
@@ -359,13 +383,13 @@
         <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
         <div class="card">
             <h3>Business Application Developer & Oracle DBA</h3>
-            <h4>[Insert Company Name] | [Start Date] – Present</h4>
+            <h4>Municipality of Gaza | April 1997 – Present</h4>
             <ul>
-                <li><strong>Application Development:</strong> Design, develop, and maintain business applications using Oracle Forms, Oracle APEX (versions 4 through 22.2), and server-side PL/SQL.</li>
-                <li><strong>System Integration:</strong> Build complex integrations between open-source revenue financial systems (funded by the World Bank) and locally developed systems (payroll, personnel). Integrate GIS applications with Oracle Spatial data.</li>
-                <li><strong>Database Administration:</strong> Manage Oracle databases, including user security, performance tuning, backup, and recovery strategies.</li>
-                <li><strong>Consultancy & SDLC:</strong> Participate in the full Software Development Life Cycle, translating business requirements into technical designs.</li>
-                <li><strong>Training & Support:</strong> Conduct functionality training for end-users and provide ongoing technical support.</li>
+                <li><strong>Data & Information Management:</strong> Managed, cleansed, and maintained complex, large-scale datasets, including financial data for calculating municipal service costs distributed across Gaza City, and field data for water meter readings and statuses distributed across municipal zones, streets, and numbered buildings.</li>
+                <li><strong>Application Development:</strong> Design, develop, and maintain Oracle database structures, tables, views, packages, and stored procedures for revenue, financial, and payroll systems using Oracle Forms and APEX (4 to 22.2).</li>
+                <li><strong>System Integration & GIS:</strong> Built complex integrations between revenue financial systems and locally developed applications. Integrated GIS applications with Oracle Spatial data[cite: 1].</li>
+                <li><strong>Database Administration:</strong> Manage Oracle databases, ensuring user security, performance tuning, robust backup, and disaster recovery via RMAN[cite: 1].</li>
+                <li><strong>Cross-Functional Collaboration:</strong> Coordinate closely with technical teams, field engineers, and administrative departments to streamline data workflows and validate reporting frameworks.</li>
             </ul>
         </div>
     </section>
@@ -377,7 +401,7 @@
         <div class="card">
             <h3>M.Sc. in Information Technology</h3>
             <h4>Islamic University, Palestine | January 2013</h4>
-            <p><strong>Thesis:</strong> A Data Mining Based Fraud Detection Model for Water Consumption Billing System in MOG.</p>
+            <p><strong>Thesis:</strong> A Data Mining Based Fraud Detection Model for Water Consumption Billing System. <br><em>Specialized in data mining, data cleansing, and building smart predictive models trained on historical data to forecast specific subscriber patterns and traits within utility services.</em></p>
         </div>
 
         <div class="card">
@@ -395,45 +419,41 @@
         <h2 class="section-title"><i class="fas fa-code"></i> Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-category card">
-                <h3>Databases</h3>
+                <h3>Data Management & Analysis</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Oracle 8i-12c</span>
-                    <span class="skill-tag">SQL/PLSQL</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">MS Access</span>
-                    <span class="skill-tag">FoxPro</span>
+                    <span class="skill-tag">Data Mining</span>
+                    <span class="skill-tag">Data Cleansing</span>
+                    <span class="skill-tag">Data Validation</span>
+                    <span class="skill-tag">Predictive Modeling</span>
+                    <span class="skill-tag">Large Datasets</span>
                 </div>
             </div>
             <div class="skill-category card">
-                <h3>Development Tools</h3>
+                <h3>Domain Experience</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Oracle APEX (4-22.2)</span>
-                    <span class="skill-tag">Oracle Forms & Reports</span>
-                    <span class="skill-tag">Delphi</span>
-                    <span class="skill-tag">Visual Basic 6</span>
-                    <span class="skill-tag">C++</span>
-                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Municipal Financial Data</span>
+                    <span class="skill-tag">Service Cost Calculation</span>
+                    <span class="skill-tag">Water Meter Readings</span>
+                    <span class="skill-tag">Field Coordination</span>
                 </div>
             </div>
             <div class="skill-category card">
-                <h3>Web & Servers</h3>
+                <h3>Databases & Oracle</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">HTML5 / CSS3</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Bootstrap</span>
-                    <span class="skill-tag">WebLogic 12c</span>
-                    <span class="skill-tag">IIS / Apache</span>
-                    <span class="skill-tag">Web Services</span>
+                    <span class="skill-tag">Oracle 8i to 12c[cite: 1]</span>
+                    <span class="skill-tag">Oracle APEX[cite: 1]</span>
+                    <span class="skill-tag">SQL & PL/SQL[cite: 1]</span>
+                    <span class="skill-tag">Stored Procedures[cite: 1]</span>
+                    <span class="skill-tag">Oracle DBA & RMAN[cite: 1]</span>
                 </div>
             </div>
             <div class="skill-category card">
-                <h3>OS, GIS & Networking</h3>
+                <h3>GIS & Development</h3>
                 <div class="skill-tags">
-                    <span class="skill-tag">Windows Server (NT-2012)</span>
-                    <span class="skill-tag">UNIX (Data General)</span>
-                    <span class="skill-tag">ArcView / ArcInfo</span>
-                    <span class="skill-tag">Oracle Spatial</span>
-                    <span class="skill-tag">TCP/IP</span>
+                    <span class="skill-tag">Oracle Spatial[cite: 1]</span>
+                    <span class="skill-tag">GIS Integration[cite: 1]</span>
+                    <span class="skill-tag">Oracle Forms & Reports[cite: 1]</span>
+                    <span class="skill-tag">SDLC[cite: 1]</span>
                 </div>
             </div>
         </div>
@@ -448,10 +468,12 @@
             <div class="list-item">
                 <div class="list-icon"><i class="fas fa-file-alt"></i></div>
                 <div class="list-content">
-                    <h4>Water Consumption Financial Fraud Detection: A model based on rule induction</h4>
-                    <p>IEEE Publication, April 2013</p>
-                    <a href="http://www.computer.org/csdl/proceedings/picict/2013/4984/00/4984a115-abs.html" target="_blank">View Paper on IEEE </a> | 
-                    <a href="https://goo.gl/Q6vqPH" target="_blank">Alternate Link</a>
+                    <h4>Water Consumption Financial Fraud Detection: A Model Based on Rule Induction</h4>
+                    <p>Islamic University / IEEE Publication, April 2013</p>
+                    <div class="publication-links">
+                        <a href="https://www.computer.org/csdl/proceedings-article/picict/2013/4984a115/12OmNApcuDQ" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Computer Society</a>
+                        <a href="https://ieeexplore.ieee.org/document/6545946" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE Xplore</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -461,30 +483,39 @@
             <div class="list-item">
                 <div class="list-icon"><i class="fas fa-certificate"></i></div>
                 <div class="list-content">
-                    <h4>Oracle DBA</h4>
-                    <p>Brainbench</p>
-                </div>
-            </div>
-            <div class="list-item">
-                <div class="list-icon"><i class="fas fa-certificate"></i></div>
-                <div class="list-content">
-                    <h4>Oracle Developer 2000</h4>
-                    <p>Brainbench</p>
+                    <h4>Oracle DBA & Oracle Developer 2000</h4>
+                    <p>Brainbench[cite: 1]</p>
                 </div>
             </div>
             <div class="list-item">
                 <div class="list-icon"><i class="fas fa-certificate"></i></div>
                 <div class="list-content">
                     <h4>Visual Basic 6</h4>
-                    <p>Microsoft</p>
+                    <p>Microsoft[cite: 1]</p>
                 </div>
             </div>
             <div class="list-item">
                 <div class="list-icon"><i class="fas fa-certificate"></i></div>
                 <div class="list-content">
-                    <h4>GIS Applications & Oracle Special (Integration)</h4>
-                    <p>Intergraph</p>
+                    <h4>GIS Applications & Oracle Spatial Integration</h4>
+                    <p>Intergraph[cite: 1]</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CVs Section -->
+    <section id="cvs" class="container">
+        <h2 class="section-title"><i class="fas fa-file-pdf"></i> Download Tailored CVs</h2>
+        <div class="card" style="text-align: center;">
+            <p style="margin-bottom: 25px; color: var(--text-light);">Access professional resume versions matching specific application requirements.</p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="data-support-cv.pdf" download class="hero-btn" style="background: var(--primary-color); display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-download"></i> Data & Support Assistant CV (ATS)
+                </a>
+                <a href="oracle-developer-cv.pdf" download class="hero-btn secondary" style="display: inline-flex; align-items: center; gap: 10px;">
+                    <i class="fas fa-download"></i> Oracle Developer & DBA CV
+                </a>
             </div>
         </div>
     </section>
@@ -496,20 +527,15 @@
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Palestine</span>
+                    <span>Gaza City, Palestine</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <span>Iyad.Hameed.fl@gmail.com</span>
                 </div>
-                <!-- Add your LinkedIn or GitHub here -->
                 <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="#" style="color: var(--primary-color); text-decoration: none;">linkedin.com/in/yourprofile</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="#" style="color: var(--primary-color); text-decoration: none;">github.com/yourusername</a>
+                    <i class="fas fa-globe"></i>
+                    <a href="https://iyadhameed.github.io" target="_blank" style="color: var(--primary-color); text-decoration: none;">iyadhameed.github.io</a>
                 </div>
             </div>
         </div>
@@ -517,7 +543,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Iyad Hamid. All Rights Reserved.</p>
+        <p>&copy; 2026 Iyad H. S. Hameed. All Rights Reserved.</p>
     </footer>
 
     <!-- JavaScript for Mobile Menu and Smooth Scroll -->
@@ -542,9 +568,12 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
